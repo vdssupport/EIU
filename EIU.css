@@ -1,17 +1,17 @@
 /*
-75787B: (don't include the '#')
-696c6e: #696c6e; (goto http://www.color-hex.com/color/75787B ; use the second Shade -- just needs to be a little bit darker.)
-004C97: (don't include the '#')
-54a7b5 : #54a7b5 ; (goto http://www.color-hex.com/color/004C97 ; find the color similar to e_e_e_) (Make sure this color is accessible by going to http://accessible-colors.com and checking Color_2_Tint on a background of both Color_1 and Color_2; select the suggested text color that works for both backgrounds)
+{{Color_1}}: (don't include the '#')
+{{Color_1_Shade}}: #{{Color_1_Shade}}; (goto http://www.color-hex.com/color/{{Color_1}} ; use the second Shade -- just needs to be a little bit darker.)
+{{Color_2}}: (don't include the '#')
+{{Color_2_Tint}}: #{{Color_2_Tint}}; (goto http://www.color-hex.com/color/{{Color_2}} ; find the color similar to e_e_e_) (Make sure this color is accessible by going to http://accessible-colors.com and checking Color_2_Tint on a background of both Color_1 and Color_2; select the suggested text color that works for both backgrounds)
 {{Logo_URL}}: {{Logo_URL}} i.e. www.wingate.edu/wp-content/uploads/2015/06/logo.png
 */
 
 html {
-  background: #75787B;
+  background: #{{Color_1}};
 }
 
 .splash {
-  background-color: #75787B;
+  background-color: #{{Color_1}};
 }
 
 .splash .loading path {
@@ -19,7 +19,7 @@ html {
 }
 
 header.header-main {
-  background-color: #75787B;
+  background-color: #{{Color_1}};
   height:10.5em;
 }
 
@@ -31,12 +31,12 @@ header.header-main {
 }
 
 header.header-page {
-  background-color:#004C97;
+  background-color:#{{Color_2}};
 }
 
 .header-page .tabs li a {
-  border-bottom-color:#004C97;
-  color: #54a7b5 ;
+  border-bottom-color:#{{Color_2}};
+  color: #{{Color_2_Tint}};
 }
 
 .header-page .tabs li a:hover,
@@ -47,34 +47,34 @@ header.header-page {
 
 /* Keep this block only if it looks good. */
 .header-page .tabs a.active {
-    border-bottom-color: #75787B;
+    border-bottom-color: #{{Color_1}};
 }
 
 .header-page .buttons button {
-  background-color: #75787B;
+  background-color: #{{Color_1}};
   color: #fff;
 }
 
 .header-page button {
-  background-color: #004C97;
+  background-color: #{{Color_2}};
   color: #fff;
 }
 
 .header-page .buttons button:hover,
 .header-page .buttons button:focus 
 {
-  background-color: #54a7b5 ;
-  color: #75787B;
+  background-color: #{{Color_2_Tint}};
+  color: #{{Color_1}};
 
   /* Alternative if the above doesn't look so great.
-  background-color: #004C97;
+  background-color: #{{Color_2}};
   color: #fff;
    */
 }
 
 .header-page .filters .filter:hover select,
 .header-page .filters .filter:focus-within select {
-    background-color: #75787B;
+    background-color: #{{Color_1}};
     color: #fff;
 }
 
@@ -84,19 +84,19 @@ header.header-page {
 }
 
 button {
-    background-color: #004C97;
+    background-color: #{{Color_2}};
 }
 
 button:hover,
 button:focus {
-    background-color: #54a7b5 ;
+    background-color: #{{Color_2_Tint}};
 }
 
 router-view .buttons button.primary,
 #accept-terms,
 button.submit-login
 {
-    background-color: #75787B;
+    background-color: #{{Color_1}};
 }
 
 router-view .buttons button.primary:hover,
@@ -106,7 +106,7 @@ router-view .buttons button.primary:focus,
 button.submit-login:hover,
 button.submit-login:focus
 {
-    background-color: #696c6e;
+    background-color: #{{Color_1_Shade}};
 }
 
 .user-info {
@@ -114,7 +114,7 @@ button.submit-login:focus
 }
 
 .user-info a {
-    color: #54a7b5 ;
+    color: #{{Color_2_Tint}};
 }
 
 .user-info a:hover,
@@ -133,16 +133,16 @@ button.submit-login:focus
 }
 
 .admin-links .fa {
-    color: #54a7b5 ; /*default #007bff*/
+    color: #{{Color_2_Tint}}; /*default #007bff*/
 }
 
 table th,
 table td {
-    background: #54a7b5 ;
+    background: #{{Color_2_Tint}};
 }
 
 .footer {
-    background: #75787B;	
+    background: #{{Color_1}};	
 }
 
 /* Uncomment this block if the organization has a Plus Account.
